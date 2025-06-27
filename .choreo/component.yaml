@@ -1,7 +1,0 @@
-componentType: SERVICE
-name: neon-pg-crud-api
-source:
-  type: Ballerina
-  path: .
-build:
-  arguments: []
