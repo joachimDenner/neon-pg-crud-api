@@ -1,4 +1,4 @@
 [package]
 org = "joachimDenner"
-name = "neon_pg_crud"
+name = "neon-pg-crud-api"
 version = "0.1.0"
