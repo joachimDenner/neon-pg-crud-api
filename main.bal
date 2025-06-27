@@ -14,8 +14,8 @@ postgresql:Client dbClient = check new ({
 type anstalld record {
     integer id;
 	string firstNamn;
-    string lastName;
-    string workTitle;
+    	string lastName;
+    	string workTitle;
 	date created;
 	date updated;
 	text comment;
@@ -37,7 +37,7 @@ service /anstalld on new http:Listener(0) {
 
     resource put .(json input) returns string {
         check dbClient->execute(
-            "UPDATE anstalld SET workTitle = $1 WHERE firstname = $2 AND lastname = $3",
+            "UPDATE anstalld SET workTitle = $1 WHERE firstNamn = $2 AND lastName = $3",
             input.workTitle, input.firstNamn, input.lastName);
         return "Updated";
     }
