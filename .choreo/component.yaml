@@ -1,0 +1,4 @@
+componentType: SERVICE
+name: neon-pg-crud-service
+source:
+  type: Ballerina
