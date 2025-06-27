@@ -21,7 +21,7 @@ type anstalld record {
 	text comment;
 };
 
-service /anstalld on new http:Listener(8090) {
+service /anstalld on new http:Listener(0) {
 
     resource get .() returns json {
         stream<record {}, error?> result = dbClient->query("SELECT * FROM anstalld");
