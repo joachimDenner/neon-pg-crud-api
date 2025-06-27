@@ -1,3 +1,4 @@
-[project]
-org-name = "joachimDenner"
+[package]
+org = "joachimDenner"
+name = "neon_pg_crud_api"
 version = "0.1.0"
