@@ -2,4 +2,4 @@ componentType: SERVICE
 name: neon-pg-crud-api
 source:
   type: Ballerina
-  path: .
+  path: neon-pg-crud-api
